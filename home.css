@@ -1,0 +1,175 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #edff23;
+}
+.home-header {
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-white);
+}
+.home-hero {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  margin-top: 96px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home-hero1 {
+  top: 164px;
+  right: -14px;
+  height: 281px;
+  position: absolute;
+}
+.home-container1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 987px;
+  height: 243px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-hero-sub-heading {
+  font-size: 18px;
+  text-align: center;
+}
+.home-hero-heading {
+  top: 10%;
+  left: 0px;
+  right: 0px;
+  width: 872px;
+  height: 123px;
+  margin: auto;
+  position: absolute;
+  font-size: 5em;
+  max-width: 800px;
+  align-self: center;
+  text-align: center;
+  animation-name: tada;
+  animation-delay: 0s;
+  animation-duration: 3000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.home-btn-group {
+  gap: var(--dl-space-space-oneandhalfunits);
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.home-footer {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-text14 {
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+.home-container2 {
+  top: 137px;
+  flex: 0 0 auto;
+  left: 500px;
+  width: 200px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home-navlink {
+  top: 80%;
+  left: 0px;
+  color: #ff00bc;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Rubik Gemstones";
+  text-decoration: none;
+}
+.home-image {
+  top: 3%;
+  width: 240px;
+  height: 246px;
+  position: absolute;
+  align-self: center;
+  margin-top: var(--dl-space-space-halfunit);
+  object-fit: cover;
+}
+@media(max-width: 991px) {
+  .home-hero1 {
+    flex-direction: column;
+  }
+  .home-container1 {
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+    padding-right: 0px;
+  }
+  .home-hero-sub-heading {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .home-hero-heading {
+    text-align: center;
+  }
+}
+@media(max-width: 767px) {
+  .home-hero1 {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .home-hero-sub-heading {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .home-hero1 {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .home-container1 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .home-hero-heading {
+    width: 100%;
+    font-size: 300%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .home-btn-group {
+    flex-direction: column;
+  }
+}
